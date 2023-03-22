@@ -1,0 +1,45 @@
+===============================================
+Github:
+
+1. Create a github Account
+2. Create a repo
+
+Tops Career Center
+=================================================
+Setup:
+
+Kotlin:
+---------------------------------------JDK-------------------------------------------------
+step 1: Download JDK:Java Development Kit
+https://www.techspot.com/downloads/5198-java-jre.html
+
+step 2:Install JDK
+
+step 3:Set the Path
+Path => C:\Program Files\Java\jdk1.8.0_191\bin
+
+This Pc->Right Click->Properties->Advanced system settings->Environment Variables
+->Path->Edit->"Paste Your Path"->Click on OK
+
+Open your CMD and type javac
+
+-----------------------------------IntelIjIDEA---------------------------------------------
+Editor
+
+Download :
+https://www.jetbrains.com/idea/download/?fromIDE=#section=windows[Community vesion]
+
+Install:
+
+=================================================================
+
+var
+val
+Operator
+Arithmetic Op: +,-,*,/,%
+
+
+
+
+
+
