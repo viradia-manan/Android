@@ -1,0 +1,7 @@
+class crickter
+{
+    fun batsman()
+    {
+
+    }
+}
