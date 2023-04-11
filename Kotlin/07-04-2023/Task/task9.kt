@@ -1,0 +1,24 @@
+
+fun main()
+{
+    var a= arrayListOf<String>()
+    a.add("Rutvik")
+    a.add("Manan")
+    for(i in a)
+    {
+        println(i)
+    }
+    var b= arrayListOf<String>()
+    b.add("Manan")
+    b.add("Rutvik")
+    for(i in b)
+    {
+        println(i)
+    }
+    var join= arrayListOf<String>()
+
+    join.addAll(a)
+    join.addAll(b)
+
+    println("join array:$join")
+}
