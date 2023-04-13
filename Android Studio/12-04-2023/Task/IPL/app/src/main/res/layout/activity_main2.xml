@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/i_rohit"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/rohit" />
+
+        <TextView
+            android:id="@+id/n_rohit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rohit Sharma"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_rohit"/>
+
+        <ImageView
+            android:id="@+id/n_kishan"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/kishan"
+            android:layout_below="@id/n_rohit"/>
+
+        <TextView
+            android:id="@+id/i_kishan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ishan Kishan"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/n_kishan"/>
+
+        <ImageView
+            android:id="@+id/i_suryakumar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/surykumar"
+            android:layout_below="@id/i_kishan"/>
+
+        <TextView
+            android:id="@+id/n_suryakumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suryakumar Yadav"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_suryakumar"/>
+
+        <ImageView
+            android:id="@+id/n_tilak"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/tilak"
+            android:layout_below="@id/n_suryakumar"/>
+
+        <TextView
+            android:id="@+id/i_tilak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tilak Varma"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/n_tilak"/>
+
+        <ImageView
+            android:id="@+id/i_dewald"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/dewald"
+            android:layout_below="@id/i_tilak"/>
+
+        <TextView
+            android:id="@+id/n_dewald"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dewald Bravis"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_dewald"/>
+
+        <ImageView
+            android:id="@+id/i_ramdeep"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/ramandeep"
+            android:layout_below="@id/n_dewald"/>
+
+        <TextView
+            android:id="@+id/n_ramdeep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ramdeep Singh"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_ramdeep"/>
+
+        <ImageView
+            android:id="@+id/i_david"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/david"
+            android:layout_below="@id/n_ramdeep"/>
+
+        <TextView
+            android:id="@+id/n_david"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tim David"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_david"/>
+
+        <ImageView
+            android:id="@+id/i_piyush"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/piyush"
+            android:layout_below="@id/n_david"/>
+
+        <TextView
+            android:id="@+id/n_piyush"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piyush Chawla"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_piyush"/>
+
+        <ImageView
+            android:id="@+id/i_aakash"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/aakash"
+            android:layout_below="@id/n_piyush"/>
+
+        <TextView
+            android:id="@+id/n_aakash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aakash Madhwal"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_aakash"/>
+    </RelativeLayout>
+</ScrollView>

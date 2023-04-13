@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity4"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/i_gill"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/gill" />
+
+        <TextView
+            android:id="@+id/n_gill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shubhman Gill"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_gill"/>
+
+        <ImageView
+            android:id="@+id/i_saha"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/saha"
+            android:layout_below="@id/n_gill"/>
+
+        <TextView
+            android:id="@+id/n_saha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wriddhiman Saha"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_saha"/>
+
+        <ImageView
+            android:id="@+id/i_miller"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/miller"
+            android:layout_below="@id/n_saha"/>
+
+        <TextView
+            android:id="@+id/n_miller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="David Miller"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_miller"/>
+
+        <ImageView
+            android:id="@+id/i_kane"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/kane"
+            android:layout_below="@id/n_miller"/>
+
+        <TextView
+            android:id="@+id/n_kane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kane Williamson"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_kane"/>
+
+        <ImageView
+            android:id="@+id/i_hardik"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/hardik"
+            android:layout_below="@id/n_kane"/>
+
+        <TextView
+            android:id="@+id/n_hardik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hradik Pandya"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_hardik"/>
+
+        <ImageView
+            android:id="@+id/i_vijay"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/vijay"
+            android:layout_below="@id/n_hardik"/>
+
+        <TextView
+            android:id="@+id/n_vijay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vijay Shankar"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_vijay"/>
+
+        <ImageView
+            android:id="@+id/i_tevatia"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/tewatia"
+            android:layout_below="@id/n_vijay"/>
+
+        <TextView
+            android:id="@+id/n_tevatia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rahul Tewatia"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_tevatia"/>
+
+        <ImageView
+            android:id="@+id/i_yadav"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/jayant"
+            android:layout_below="@id/n_tevatia"/>
+
+        <TextView
+            android:id="@+id/n_yadav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jayant Yadav"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_yadav"/>
+
+        <ImageView
+            android:id="@+id/i_shami"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/shami"
+            android:layout_below="@id/n_yadav"/>
+
+        <TextView
+            android:id="@+id/n_shami"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mohammad Shami"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_shami"/>
+
+        <ImageView
+            android:id="@+id/i_rashid"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/rashid"
+            android:layout_below="@id/n_shami"/>
+
+        <TextView
+            android:id="@+id/n_rashid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rashid Khan"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_rashid"/>
+
+        <ImageView
+            android:id="@+id/i_mavi"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/shivam"
+            android:layout_below="@id/n_rashid"/>
+
+        <TextView
+            android:id="@+id/n_mavi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shivam Mavi"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_mavi"/>>
+
+    </RelativeLayout>
+</ScrollView>

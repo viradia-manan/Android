@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity3"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/i_fef"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/fef" />
+
+        <TextView
+            android:id="@+id/n_fef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faf Du Plessis"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_fef"/>
+
+        <ImageView
+            android:id="@+id/i_finn"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/finn"
+            android:layout_below="@id/n_fef"/>
+
+        <TextView
+            android:id="@+id/n_finn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finn Allen"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_finn"/>
+
+        <ImageView
+            android:id="@+id/i_kohli"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/kohli"
+            android:layout_below="@id/n_finn"/>
+
+        <TextView
+            android:id="@+id/n_kohli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Virat Kohli"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_kohli"/>
+
+        <ImageView
+            android:id="@+id/i_dk"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/dk"
+            android:layout_below="@id/n_kohli"/>
+
+        <TextView
+            android:id="@+id/n_dk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinesh Karthik"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_dk"/>
+
+        <ImageView
+            android:id="@+id/i_willey"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/willey"
+            android:layout_below="@id/n_dk"/>
+
+        <TextView
+            android:id="@+id/n_willey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="David Willey"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_willey"/>
+
+        <ImageView
+            android:id="@+id/i_maxwell"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/maxwell"
+            android:layout_below="@id/n_willey"/>
+
+        <TextView
+            android:id="@+id/n_maxwell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glane Maxwell"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_maxwell"/>
+
+        <ImageView
+            android:id="@+id/i_harshal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/harshal"
+            android:layout_below="@id/n_maxwell"/>
+
+        <TextView
+            android:id="@+id/n_harshal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harshal Patel"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_harshal"/>
+
+        <ImageView
+            android:id="@+id/i_siraj"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/siraj"
+            android:layout_below="@id/n_harshal"/>
+
+        <TextView
+            android:id="@+id/n_siraj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mohammed Siraj"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_siraj"/>
+
+        <ImageView
+            android:id="@+id/i_rajan"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/rajan"
+            android:layout_below="@id/n_siraj"/>
+
+        <TextView
+            android:id="@+id/n_rajan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rajan Kumar"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_rajan"/>
+
+        <ImageView
+            android:id="@+id/i_sonu"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/sony"
+            android:layout_below="@id/n_rajan"/>
+
+        <TextView
+            android:id="@+id/n_sonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sonu Yadav"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_sonu"/>
+
+        <ImageView
+            android:id="@+id/i_ahamad"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/ahmad"
+            android:layout_below="@id/n_sonu"/>
+
+        <TextView
+            android:id="@+id/n_ahmad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shabaz Ahamad"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/i_ahamad"/>
+    </RelativeLayout>
+</ScrollView>

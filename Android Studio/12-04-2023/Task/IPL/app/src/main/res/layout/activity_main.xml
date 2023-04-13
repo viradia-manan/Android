@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/mi"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/mi" />
+
+        <TextView
+            android:id="@+id/teammi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MI"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/mi"/>
+
+        <ImageView
+            android:id="@+id/rcb"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/rcb"
+            android:layout_below="@id/teammi"/>
+
+        <TextView
+            android:id="@+id/teamrcb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RCB"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/rcb"/>
+
+        <ImageView
+            android:id="@+id/gt"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/gt"
+            android:layout_below="@id/teamrcb"/>
+
+        <TextView
+            android:id="@+id/teamgt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GT"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/gt"/>
+
+        <ImageView
+            android:id="@+id/dc"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/dc"
+            android:layout_below="@id/teamgt"/>
+
+        <TextView
+            android:id="@+id/teamdc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DC"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/dc"/>
+
+        <ImageView
+            android:id="@+id/rr"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/rr"
+            android:layout_below="@id/teamdc"/>
+
+        <TextView
+            android:id="@+id/teamrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RR"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:layout_below="@id/rr"/>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
