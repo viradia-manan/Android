@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/pi1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/milk"
+        android:layout_below="@id/call"/>
+
+    <TextView
+        android:id="@+id/milk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Milk"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi1"/>
+
+    <TextView
+        android:id="@+id/milkPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 15Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/milk"/>
+
+    <ImageView
+        android:id="@+id/pi2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/butter"
+        android:layout_below="@id/milkPrice"/>
+
+    <TextView
+        android:id="@+id/butter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Butter"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi2"/>
+
+    <TextView
+        android:id="@+id/butterPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 50Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/butter"/>
+
+    <ImageView
+        android:id="@+id/pi3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/cheese"
+        android:layout_below="@id/butterPrice"/>
+
+    <TextView
+        android:id="@+id/cheese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cheese"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi3"/>
+
+    <TextView
+        android:id="@+id/cheeseprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 75Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/cheese"/>
+
+    <ImageView
+        android:id="@+id/pi4"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/icecrem"
+        android:layout_below="@id/cheeseprice"/>
+
+    <TextView
+        android:id="@+id/icecream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ice Cream"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi4"/>
+
+    <TextView
+        android:id="@+id/icecreamPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 150Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/icecream"/>
+
+    <ImageView
+        android:id="@+id/pi5"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/cone"
+        android:layout_below="@id/icecreamPrice"/>
+
+    <TextView
+        android:id="@+id/cone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cone"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi5"/>
+
+    <TextView
+        android:id="@+id/conePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 30Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/cone"/>
+
+    <ImageView
+        android:id="@+id/pi6"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/candy"
+        android:layout_below="@id/conePrice"/>
+
+    <TextView
+        android:id="@+id/candy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Candy"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi6"/>
+
+    <TextView
+        android:id="@+id/candyPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 40Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/candy"/>
+
+    <ImageView
+        android:id="@+id/pi7"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/ghee"
+        android:layout_below="@id/candyPrice"/>
+
+    <TextView
+        android:id="@+id/ghee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ghee"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi7"/>
+
+    <TextView
+        android:id="@+id/gheePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 300Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/ghee"/>
+
+    <ImageView
+        android:id="@+id/pi8"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/kesar"
+        android:layout_below="@id/gheePrice"/>
+
+    <TextView
+        android:id="@+id/kesar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kesar Milk"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi8"/>
+
+    <TextView
+        android:id="@+id/kesarPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 20Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/kesar"/>
+
+    <ImageView
+        android:id="@+id/pi9"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/slice"
+        android:layout_below="@id/kesarPrice"/>
+
+    <TextView
+        android:id="@+id/slice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cheese Slice"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi9"/>
+
+    <TextView
+        android:id="@+id/slicePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 90Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/slice"/>
+
+    <ImageView
+        android:id="@+id/pi10"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/dahi"
+        android:layout_below="@id/slicePrice"/>
+
+    <TextView
+        android:id="@+id/dahi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dahi"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/pi10"/>
+
+    <TextView
+        android:id="@+id/dahiPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 15Rs."
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@id/dahi"/>
+
+
+</RelativeLayout>
+
+</ScrollView>
