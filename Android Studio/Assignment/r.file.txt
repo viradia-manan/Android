@@ -1,0 +1,3 @@
+R. file Details
+
+Android R. java is an auto-generated file by aapt (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory. If you create any component in the activity_main. xml file, id for the corresponding component is automatically created in this file.
