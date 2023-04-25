@@ -1,0 +1,13 @@
+Fragment:Multiple Screens on One Activity
+
+Types of Fragment:-
+1)Static Fragment ->Launching XML
+2)Dynamic Fragment ->Launching Kotlin
+
+->Fragments needs a minimum one activity for launching
+
+Transactions:-
+1) A to A ->Intent
+2) A to F ->Manager,Transaction
+3) F to A ->
+4) F to F ->
