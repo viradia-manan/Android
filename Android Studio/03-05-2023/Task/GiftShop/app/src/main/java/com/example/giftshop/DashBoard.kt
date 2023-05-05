@@ -1,6 +1,7 @@
 package com.example.giftshop
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -9,6 +10,7 @@ import android.widget.AdapterView
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.giftshop.databinding.ActivityDashBoardBinding
 
@@ -82,4 +84,20 @@ class DashBoard : AppCompatActivity(), OnItemClickListener {
             }
         }
     }
+
+    override fun onBackPressed() {
+        val alert = AlertDialog.Builder(this)
+        alert.setTitle("Are you sure you want exit?")
+        alert.setPositiveButton("YES",{ dialogInterface: DialogInterface, i:Int->
+
+            finishAffinity()
+
+        })
+        alert.setNegativeButton("NO",{ dialogInterface: DialogInterface, i: Int ->
+
+            dialogInterface.cancel()
+        })
+        alert.show()
+    }
+
 }

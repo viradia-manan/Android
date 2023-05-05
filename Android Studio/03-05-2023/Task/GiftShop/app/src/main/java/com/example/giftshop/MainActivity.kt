@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed(Runnable {
             startActivity(Intent(applicationContext,Intro::class.java))
-        },3000)
+        },2000)
 
     }
 }

@@ -23,7 +23,6 @@ class Intro : AppCompatActivity()
         sharedPreferences = getSharedPreferences("USER_SESSION", Context.MODE_PRIVATE)
 
         binding.btn.setOnClickListener {
-
             var i = Intent(applicationContext,Login::class.java)
             var sf:SharedPreferences.Editor = sharedPreferences.edit()
             sf.putBoolean("USER_SESSION",true)
