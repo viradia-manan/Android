@@ -9,24 +9,31 @@
     android:layout_margin="25dp"
     tools:context=".MainActivity">
 
-
     <EditText
+        android:id="@+id/edt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Name"
-        android:id="@+id/name"/>
+        android:hint="Enter Name"/>
 
     <EditText
+        android:id="@+id/edt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter the Number"
-        android:id="@+id/num"/>
+        android:hint="Enter Number"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:text="Insert"
-            android:id="@+id/insert"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERT"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW"/>
+
+
+
 
 </LinearLayout>
