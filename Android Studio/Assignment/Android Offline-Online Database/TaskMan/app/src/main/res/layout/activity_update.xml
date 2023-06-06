@@ -1,38 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".UpdateActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Task Managment"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="18dp"/>
-
-            <ImageView
-                android:id="@+id/update"
-                android:layout_alignParentRight="true"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="20dp"
-                android:src="@drawable/baseline_check_circle_outline_24"/>
-
-        </RelativeLayout>
-    </androidx.appcompat.widget.Toolbar>
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".UpdateTaskActivity"
+    android:padding="16dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -40,62 +14,76 @@
         app:cardCornerRadius="10dp">
 
         <EditText
+            android:padding="15dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/taskNameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter name"
-            android:backgroundTint="@color/white"
-            android:id="@+id/name"
-            android:padding="15dp"/>
+            android:hint="Task Name" />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
         android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter description"
+            android:padding="15dp"
             android:backgroundTint="@color/white"
-            android:id="@+id/des"
-            android:padding="15dp"/>
+            android:id="@+id/taskDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Description" />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
         android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:padding="15dp"
-            android:textSize="18dp"
-            android:text="dd/MM/yyyy"
-            android:gravity="center"
-            android:id="@+id/date"/>
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:id="@+id/date"
+            android:layout_height="wrap_content"
+            android:text="Choose Date"/>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
         android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp">
 
         <TextView
+            android:padding="15dp"
+            android:textSize="17dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:textSize="18dp"
-            android:text="hh:mm"
-            android:gravity="center"
-            android:id="@+id/time"/>
+            android:id="@+id/time"
+            android:text="Choose Time"/>
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
 </LinearLayout>
