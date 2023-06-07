@@ -22,9 +22,11 @@ class Add : AppCompatActivity()
 
         binding.btn1.setOnClickListener {
 
+            var title =binding.edt2.text.toString()
             var task = binding.edt1.text.toString()
 
             var m = Model()
+            m.title=title
             m.task = task
 
             dbHelper.insert(m)

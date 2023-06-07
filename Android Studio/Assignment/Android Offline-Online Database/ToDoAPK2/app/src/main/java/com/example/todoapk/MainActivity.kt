@@ -42,12 +42,13 @@ class MainActivity : AppCompatActivity()
         {
             var hm = HashMap<String,String>()
             hm["task"]=i.task
+            hm["com"]= i.title
 
             arrayList.add(hm)
         }
 
-        var from = arrayOf("task")
-        var to = intArrayOf(R.id.task)
+        var from = arrayOf("com","task")
+        var to = intArrayOf(R.id.title,R.id.task)
 
         var myadapter = SimpleAdapter(applicationContext,arrayList,R.layout.design,from,to)
         binding.data.adapter = myadapter
@@ -59,7 +60,7 @@ class MainActivity : AppCompatActivity()
     {
         var m1 = menu!!.add(0,1,0,"Update")
         var m2 = menu!!.add(0,2,0,"Delete")
-        var m3 = menu.add(0,3,0,"complate")
+
         super.onCreateContextMenu(menu, v, menuInfo)
     }
 
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity()
             {
                 var i = Intent(applicationContext,UpdateActivity::class.java)
                 i.putExtra("id",myid.id)
+                i.putExtra("title",myid.title)
                 i.putExtra("task",myid.task)
                 startActivity(i)
             }
@@ -96,13 +98,6 @@ class MainActivity : AppCompatActivity()
                 })
 
                 alert.show()
-            }
-            3->
-            {
-                var check = check()
-                var fm:FragmentManager = supportFragmentManager
-                var ft:FragmentTransaction = fm.beginTransaction()
-                ft.replace(R.id.check,check).commit()
             }
         }
         return super.onContextItemSelected(item)

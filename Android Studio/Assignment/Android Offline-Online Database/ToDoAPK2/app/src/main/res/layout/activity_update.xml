@@ -29,9 +29,12 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00D5D6D6"
+        android:id="@+id/edt2"/>
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_margin="10dp"
@@ -48,6 +51,5 @@
             android:layout_gravity="center"
             android:id="@+id/btn1"/>
 
-    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>

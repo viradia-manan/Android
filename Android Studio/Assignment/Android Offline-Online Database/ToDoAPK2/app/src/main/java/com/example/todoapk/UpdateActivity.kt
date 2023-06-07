@@ -21,16 +21,21 @@ class UpdateActivity : AppCompatActivity()
 
         var i = intent
         var id = i.getIntExtra("id",101)
+        var title = i.getStringExtra("title")
         var task = i.getStringExtra("task")
+
+        binding.edt2.setText(title)
 
         binding.edt1.setText(task)
 
         binding.btn1.setOnClickListener {
 
+           var title = binding.edt2.text.toString()
             var task = binding.edt1.text.toString()
 
             var m = Model()
             m.id=id
+            m.title=title
             m.task = task
 
             dbHelper.update(m)
