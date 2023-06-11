@@ -58,19 +58,35 @@ class MainActivity : AppCompatActivity()
             }
             else
             {
-                var stringRequest:StringRequest = object:StringRequest(Request.Method.POST,"https://mananviradia.000webhostapp.com/login_insert.php",
-                    Response.Listener
+                var stringRequest:StringRequest=object :StringRequest(Request.Method.POST,"https://mananviradia.000webhostapp.com/fetch_data.php",
                     {
-                        var i = Intent(applicationContext,DashBoardActivity::class.java)
-                        var sf:SharedPreferences.Editor = sharedPreferences.edit()
-                        sf.putBoolean("USER_SESSION",true)
-                        sf.putString("email",email)
-                        sf.commit()
-                        startActivity(i)
+                            response->
+                        try
+                        {
+                            if(response.trim().equals("0"))
+                            {
+                                Toast.makeText(applicationContext,"Login Fail",Toast.LENGTH_LONG).show()
+                            }
+                            else
+                            {
+                                Toast.makeText(applicationContext,"Login Success",Toast.LENGTH_LONG).show()
+                                var i = Intent(applicationContext,DashBoardActivity::class.java)
+                                var sf:SharedPreferences.Editor = sharedPreferences.edit()
+                                sf.putBoolean("USER_SESSION",true)
+                                sf.putString("email",email)
+                                sf.commit()
+                                startActivity(i)
+                            }
+                        }
+                        catch (e:JSONException)
+                        {
+                            println(e)
+                        }
 
-                    }, Response.ErrorListener
+                    },
                     {
-                        Toast.makeText(applicationContext,"No Internet", Toast.LENGTH_LONG).show()
+                        Toast.makeText(applicationContext,"No Internet",Toast.LENGTH_LONG).show()
+
                     })
                 {
                     override fun getParams(): MutableMap<String, String>?
