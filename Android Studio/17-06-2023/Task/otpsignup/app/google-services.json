@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533653752174",
+    "project_id": "otpsignup-7691c",
+    "storage_bucket": "otpsignup-7691c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533653752174:android:6a8d9691ae01d78cdd197f",
+        "android_client_info": {
+          "package_name": "com.example.otpsignup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533653752174-htoll3td9g6amnfqe17f4n0t483tq053.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYQTaP-DhKItn0rcbEHSS7MYMHy3FSBRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533653752174-htoll3td9g6amnfqe17f4n0t483tq053.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
