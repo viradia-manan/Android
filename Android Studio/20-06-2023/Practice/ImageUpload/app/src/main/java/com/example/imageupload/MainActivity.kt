@@ -66,9 +66,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if(v==button2)
         {
-            val name = editText.getText().toString()
+            val name = editText.text.toString()
             val path = getPath(filepath)
-            MultipartUploadRequest(this,"https://vyasprakruti.000webhostapp.com/serverimage/upload.php")
+            MultipartUploadRequest(this,"https://mananviradia14.000webhostapp.com/singleimageupload/upload.php")
                 .addFileToUpload(path, "url")
                 .addParameter("name", name)
                 .setMaxRetries(2)
@@ -98,7 +98,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    @Suppress("DEPRECATION")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
     {
         if(requestCode==1 && resultCode == RESULT_OK && data != null)
