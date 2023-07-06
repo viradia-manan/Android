@@ -19,7 +19,6 @@ class ViewClient : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private lateinit var binding: ActivityViewClientBinding
     lateinit var list: MutableList<Model>
     var category = arrayOf("Select category","Bank","Municipal corporation")
-    var selected_category=""
 
     @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?)
@@ -31,51 +30,20 @@ class ViewClient : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         list = ArrayList()
 
+
+
         var adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item,category)
         binding.category.adapter=adapter
 
 
-       /* var stringRequest=StringRequest(Request.Method.GET,"https://mananviradia14.000webhostapp.com/bank/viewclient.php",
-            {
-                    response->
-                try
-                {
-                    var jsonArray = JSONArray(response)
-                    for(i in 0 until jsonArray.length())
-                    {
-                        var jsonObject = jsonArray.getJSONObject(i)
 
-                        var name = jsonObject.getString("name")
-                        var mob = jsonObject.getString("mobile")
-                        var email = jsonObject.getString("email")
+        binding.category.setOnItemSelectedListener(this)
+    }
 
-                        var m = Model()
-                        m.name=name
-                        m.mob=mob
-                        m.email=email
-
-                        list.add(m)
-                    }
-
-                }
-                catch(e:JSONException)
-                {
-                    println(e)
-                }
-
-                var adapter = MyAdapter(applicationContext,list)
-                binding.listview.adapter=adapter
-
-
-            })
-        {
-            Toast.makeText(applicationContext,"No Internet",Toast.LENGTH_LONG).show()
-        }
-*/
-
-
-
-        var stringRequest:StringRequest=object :StringRequest(Request.Method.GET,"https://mananviradia14.000webhostapp.com/bank/viewclient.php",
+    override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long)
+    {
+        var selected_category=category[p2]
+        var stringRequest:StringRequest=object :StringRequest(Request.Method.POST,"https://mananviradia14.000webhostapp.com/bank/viewclient.php",
             {
                     response->
                 try
@@ -123,16 +91,6 @@ class ViewClient : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         var queue:RequestQueue = Volley.newRequestQueue(this)
         queue.add(stringRequest)
-
-
-
-
-        binding.category.setOnItemSelectedListener(this)
-    }
-
-    override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long)
-    {
-        selected_category=category[p2]
         Toast.makeText(applicationContext,""+category[p2],Toast.LENGTH_LONG).show()
 
     }
