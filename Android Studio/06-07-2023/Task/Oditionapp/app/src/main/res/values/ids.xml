@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtlogin" type="id" />
+    <item name="edtcpass" type="id" />
+    <item name="edtpass" type="id" />
+    <item name="edthobbies" type="id" />
+    <item name="female" type="id" />
+    <item name="male" type="id" />
+    <item name="btn2" type="id" />
+    <item name="edtotp" type="id" />
+    <item name="btn1" type="id" />
+    <item name="edtmob" type="id" />
+    <item name="edtemail" type="id" />
+    <item name="edtlname" type="id" />
+    <item name="edtfname" type="id" />
+</resources>

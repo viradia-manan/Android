@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552574153059",
+    "project_id": "odition-app",
+    "storage_bucket": "odition-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552574153059:android:44870a840d9c2b9b4ee356",
+        "android_client_info": {
+          "package_name": "com.example.oditionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552574153059-bk3u6m4vdig26pt8fo5uu9too92vt4pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXUIQJAA3EKESxoZmuuhQYDABH0amtmtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552574153059-bk3u6m4vdig26pt8fo5uu9too92vt4pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
