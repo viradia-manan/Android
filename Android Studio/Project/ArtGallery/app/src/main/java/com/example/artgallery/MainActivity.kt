@@ -9,7 +9,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.artgallery.databinding.ActivityMainBinding
+import com.example.artgallery.ui.cart.Cart
+import com.example.artgallery.ui.favourite.Favourite
 import com.example.artgallery.ui.home.HomeFragment
+import com.example.artgallery.ui.profile.Profile
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +25,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(HomeFragment())
 
+        binding.navView.setOnItemSelectedListener {
+            when(it.itemId)
+            {
+                R.id.navigation_home -> replaceFragment(HomeFragment())
+                R.id.navigation_dashboard -> replaceFragment(Favourite())
+                R.id.navigation_notifications -> replaceFragment(Cart())
+                R.id.navigation_profile -> replaceFragment(Profile())
+                else -> {
+
+                }
+            }
+            true
+        }
 
     }
 

@@ -13,13 +13,19 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.artgallery.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:name="com.example.artgallery.ui.cart.Cart"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.artgallery.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:name="com.example.artgallery.ui.favourite.Favourite"
+        android:label="Favourite"
+        tools:layout="@layout/fragment_favourite" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.artgallery.ui.profile.Profile"
+        android:label="title_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

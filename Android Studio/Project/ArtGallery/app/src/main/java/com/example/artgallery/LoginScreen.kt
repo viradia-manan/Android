@@ -8,7 +8,6 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.artgallery.databinding.ActivityLoginScreenBinding
-import com.example.artgallery.ui.dashboard.DashboardFragment
 import com.example.artgallery.ui.home.HomeFragment
 
 class LoginScreen : AppCompatActivity()
